@@ -1,0 +1,10 @@
+Here is a procedure I’ve developed for installing python 3.7 along side the system python on RHEL/Centos 7. It is Ansible based, but as you can see, can easily be turned into a simple shell scripts.
+
+Ansible inventory: idadcc7-inv
+Ansible playbook : py37-install.yaml
+
+If you have Ansible installed on your local system and these files in the current working directory, you may perform the install on host idadcc7.ucsd.edu with the following:
+
+shell-prompt> ansible-playbook -i idadcc7-inv --ask-become-pass py37-install.yaml
+
+
